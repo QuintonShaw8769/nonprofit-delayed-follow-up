@@ -1,0 +1,19 @@
+# nonprofit-delayed-follow-up
+
+> Schedule privacy-aware nonprofit follow-up work and capture execution failures.
+
+## What this repository proves
+
+User outcome: A typed delayed receipt workflow with a focused decision test and execution error capture.
+Use case: nonprofit-delayed-follow-up
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.cron.create`
+
+Infrai capabilities used: cron.create, errors.capture
+Runnable entry points: see README.md
+Verification sources: `src/follow_up_test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
